@@ -702,23 +702,23 @@ footer{
     flex-wrap: wrap;
 }
 
-.gallery-list-item{
+.gallery-list-container{
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
-.gallery-list-item:hover,
-.gallery-list-item:focus{
+.gallery-list-item:focus,
+.gallery-list-item:hover{
     
     box-sizing: border-box;
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
-.gallery-list-item:nth-child(3n){
+.gallery-list-container:nth-child(3n){
     margin-right: 0px;
 }
 
-.gallery-list-item:nth-last-child(-n + 3){
+.gallery-list-container:nth-last-child(-n + 3){
     margin-bottom: 0px;
 }
 
@@ -765,6 +765,11 @@ footer{
     border-right: solid rgba(238, 238, 238, 1) 1px;
     border-bottom: solid rgba(238, 238, 238, 1) 1px;
 }
+
+.overlay{
+
+}
+
 .proj-descr{
     font-weight: normal;
     font-size: 18px;
