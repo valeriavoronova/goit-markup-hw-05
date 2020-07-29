@@ -707,6 +707,12 @@ footer{
     margin-bottom: 30px;
 }
 
+.gallery-list-item{
+    display: block;
+    width: 370px;
+    height: 404px;
+}
+
 .gallery-list-item:focus,
 .gallery-list-item:hover{
     
