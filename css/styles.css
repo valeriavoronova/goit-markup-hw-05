@@ -64,10 +64,12 @@ html {
     letter-spacing: 0.02em;
     color: var(--p-text-color);
     text-decoration: none;
-    list-style: none;
-    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    list-style: none;    
 }
 
+.adress-link{
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .adress-item svg{
     margin-right: 10px;
