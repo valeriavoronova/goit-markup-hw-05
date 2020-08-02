@@ -99,6 +99,21 @@ html {
     margin-right: 50px;
 }
 
+.header-nav-link-active{
+    position: relative;
+}
+
+.nav-active::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
 .header .container{
     display: flex;
     align-items: center;
