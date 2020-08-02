@@ -20,6 +20,24 @@ html {
     margin: 0;
     padding: 0;
   }
+
+  body{
+    font-family: var(--main-font);
+    background-color: var(--main-header-color);
+    font-style: normal;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+     
+    margin-left: auto;
+    margin-right: auto;   
+    
+}
+
+
 /*header*/
 .header{
     padding-bottom: 25px;
@@ -31,13 +49,27 @@ html {
 }
 .list-adress-link{
     display: flex;
-    /*margin-left: 305px;*/
+  
 }
 
+
+
+
+
 .adress-item{
+    
     display: flex;
     align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.02em;
+    color: var(--p-text-color);
+    text-decoration: none;
+    list-style: none;
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .adress-item svg{
     margin-right: 10px;
@@ -74,29 +106,7 @@ html {
 
 }
 
-.container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-     
-    margin-left: auto;
-    margin-right: auto;
-    
-    
-   
-    
-}
 
-
-/*.list li{
-    outline: 2px solid green;
-}
-*/
-body{
-    font-family: var(--main-font);
-    background-color: var(--main-header-color);
-    font-style: normal;
-}
 
 /*шапка*/
 .main-logo{
@@ -108,8 +118,7 @@ body{
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
-    /*margin-right: 85px;
-    margin-top: 24px;*/
+
 }
 
 .logo-blue{
@@ -129,7 +138,8 @@ body{
 }
 
 .nav-item-passive{
-color: var(--bold-title-color);
+    color: var(--bold-title-color);
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item-active{
@@ -139,19 +149,9 @@ color: var(--bold-title-color);
 .nav-item-passive:hover,
 .nav-item-passive:focus{
     color: var(--accent-color);
+
 }
 
-.adress-item{
-    
-   
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.42;
-    letter-spacing: 0.02em;
-    color: var(--p-text-color);
-    text-decoration: none;
-    list-style: none;
-}
 
 
 .list{
@@ -215,6 +215,7 @@ h1{
     border-radius: 4px;
     border: hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover,
@@ -385,6 +386,10 @@ h1{
 
 }
 
+.social-icon-main{
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .social-icon-main:hover,
 .social-icon-main:focus{
     --color1: var(--accent-color);
@@ -411,7 +416,7 @@ h1{
     display: block;
     width: 44px;
     height: 44px;
-    border-radius: 20px;
+    border-radius: 50px;
     
 }
 
@@ -454,17 +459,11 @@ h1{
     align-items: center;
     border: solid var(--decor-color) 1px;
     border-radius: 4px;
+    fill: var(--decor-color);
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-/*.clients-list-item{
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    
-
-}*/
 
 
 .clients-list-item a:hover,
@@ -476,21 +475,6 @@ h1{
 
 
 
-
-.clients-list-item a{
-    fill: var(--decor-color);
-    
-
-}
-
-/*.clients-item-link1{
-    border-radius: 4px;
-    padding: 20px 63px;
-    border-color: transparent;
-    
-    
-}
-*/
 .clients-list-item:not(:last-child){
     margin-right: 30px;
 }
@@ -552,7 +536,6 @@ h1{
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
     letter-spacing: 0.03em;
     color: var(--main-header-color);
     text-decoration: none;
@@ -612,12 +595,11 @@ b{
     margin-right: 10px;
 }
 
-.social-link-bot{
-    background-color: var(--accent-color);
-}
+
 
 .social-link-bot{
     background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-bot:focus,
