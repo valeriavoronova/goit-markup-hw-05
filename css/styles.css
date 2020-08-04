@@ -250,6 +250,10 @@ h1{
 
 }
 /*<!--особенности-->*/
+.hidden{
+    position: absolute;
+    opacity: 0;
+}
 .flex-list{
     display: flex;
    
