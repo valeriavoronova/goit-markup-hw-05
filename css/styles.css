@@ -681,6 +681,10 @@ footer{
     margin-right: 8px;
 }
 
+.proj-type-button{
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .proj-type-button:focus,
 .proj-type-button:hover{
 
