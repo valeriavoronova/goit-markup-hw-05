@@ -313,7 +313,28 @@
             </div>
             </section>
         
-        
+        <!--modal-window-->
+        <div class="backdrop">
+           <form class="modal-form" action="#">
+               <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+               <input type="text" class="modal-form-input">
+               <input type="text" class="modal-form-input">
+               <input type="text" class="modal-form-input">
+              
+               <textarea name="" id="" cols="30" rows="10" class="modal-form-message">
+
+               </textarea>
+               <label for="" class="modal-form-option-label">
+                    <input type="checkbox" name="" id="" class="modal-form-checkbox">   
+                    <span class="modal-form-action-span">
+                        Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                    </span>
+                </label>
+                <button type="submit">Отправить</button>
+           </form> 
+        </div>
+            
+
     </main>
     <!-- FOOTER -->
     <footer>
@@ -370,22 +391,28 @@
             </ul>
         </div>
         <!--SUBSCRIBE-->
-        <div class="subscribe">
+       
             
-               <form action="">
+               <form class="subscribe-form" action="#">
+                <div class="subscribe">
+                
                     <h2 class="subscr">подпишитесь на рассылку</h2>
-                    <input class="sub-input" type="email" placeholder="E-mail">
+                    <input class="sub-input" type="email" placeholder="E-mail" required>
+                </div>
+                <div class="footer-button">
+                    <button type="submit" class="foot-button">Подписаться
+                        <svg width= "24" height= "24">
+                        <use href="./images/sprite.svg#icon-tg"></use>
+                        </svg>
+                    </button>
+                </div> 
+
                 </form> 
               
-        </div>
+        
 
-        <div class="footer-button">
-            <button class="foot-button">Подписаться
-                <svg width= "24" height= "24">
-                <use href="./images/sprite.svg#icon-tg"></use>
-            </svg></button>
-        </div> 
-    </div>
+       </div>
+    
     </footer>
 </body>
 </html>
